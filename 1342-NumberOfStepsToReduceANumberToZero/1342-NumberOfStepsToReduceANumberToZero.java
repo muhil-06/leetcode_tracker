@@ -1,0 +1,18 @@
+// Last updated: 21/09/2026, 15:17:05
+class Solution {
+    public int numberOfSteps(int n) {
+       
+        int count=0;
+        while(n!=0){
+            if((n&1)==0){
+                n=n/2;
+            }
+            else{
+                n=n-1;
+            }
+            count++;
+        }
+        return count;
+       
+    }
+}
